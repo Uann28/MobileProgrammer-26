@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buat Profil."
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan data diri mahasiswa dengan benar"
+            android:textSize="15sp"
+            android:textColor="#64748B"
+            android:layout_marginBottom="36dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textColor="#334155"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contoh: Aditias Zulmatoriq"
+            android:inputType="textPersonName"
+            android:background="#F1F5F9"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM"
+            android:textColor="#334155"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/etNim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contoh: F1D023..."
+            android:inputType="number"
+            android:background="#F1F5F9"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Program Studi"
+            android:textColor="#334155"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+        <Spinner
+            android:id="@+id/spinnerProdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1F5F9"
+            android:padding="16dp"
+            android:entries="@array/prodi_array"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textColor="#334155"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#F1F5F9"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/rbLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbPerempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:layout_marginStart="32dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobi"
+            android:textColor="#334155"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1F5F9"
+            android:padding="12dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical">
+
+            <CheckBox android:id="@+id/cbCoding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Coding / Ngoding"/>
+            <CheckBox android:id="@+id/cbDesain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Desain Grafis"/>
+            <CheckBox android:id="@+id/cbGame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bermain Game"/>
+            <CheckBox android:id="@+id/cbOlahraga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Olahraga"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTampilkanProfil"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="TAMPILKAN PROFIL"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#10B981"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="32dp"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

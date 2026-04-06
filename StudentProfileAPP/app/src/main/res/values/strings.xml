@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Aplikasi Profilku</string>
+    <string name="form_registration">Form Registrasi Mahasiswa</string>
+    <string name="label_nama">Nama Lengkap</string>
+    <string name="hint_nama">Masukkan nama lengkap</string>
+    <string name="label_nim">NIM</string>
+    <string name="hint_nim">Masukkan NIM</string>
+    <string name="label_prodi">Program Studi</string>
+    <string name="label_gender">Jenis Kelamin</string>
+    <string name="gender_male">Laki-laki</string>
+    <string name="gender_female">Perempuan</string>
+    <string name="label_hobi">Hobi</string>
+    <string name="hobi_coding">Coding / Ngoding</string>
+    <string name="hobi_desain">Desain Grafis</string>
+    <string name="hobi_game">Bermain Game</string>
+    <string name="hobi_olahraga">Olahraga</string>
+    <string name="btn_show_profile">Tampilkan Profil</string>
+
+    <string name="profile_title">Profil Mahasiswa</string>
+    <string name="profile_nama">Nama:</string>
+    <string name="profile_nim">NIM:</string>
+    <string name="profile_prodi">Program Studi:</string>
+    <string name="profile_gender">Jenis Kelamin:</string>
+    <string name="profile_hobi">Hobi:</string>
+    <string name="btn_back">Kembali</string>
+
+    <string-array name="prodi_array">
+        <item>Teknik Informatika</item>
+        <item>Sistem Informasi</item>
+        <item>Ilmu Komputer</item>
+        <item>Teknik Elektro</item>
+    </string-array>
+</resources>
